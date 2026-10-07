@@ -16,3 +16,4 @@ Try running the following commands:
 
 ### Using Codegen:
 - dbtf run-operation generate_source --args '{"schema_name": "jaffle_shop", "database_name": "raw"}'
+- dbtf run-operation generate_base_model --args '{"source_name": "jaffle_shop", "table_name": "customers"}'
