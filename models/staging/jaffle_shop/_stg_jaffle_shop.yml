@@ -15,11 +15,13 @@ models:
           - unique
           - not_null
       - name: status
+        description: "{{ doc('order_status') }}"
         data_tests:
           - accepted_values:
               arguments:
                 values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
       - name: customer_id
+        description: "The foreign key linking to the customers table."
         data_tests:
           - relationships:
               arguments:
